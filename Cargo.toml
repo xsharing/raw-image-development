@@ -1,0 +1,11 @@
+[package]
+
+name = "raw-image-development"
+version = "0.0.1"
+authors = [ "Nobuyuki Horiuchi <horiuchinobuyuki@gmail.com>" ]
+
+[dependencies]
+clap = "2.32"
+loggerv = "0.7.1"
+log = "0.4.5"
+
