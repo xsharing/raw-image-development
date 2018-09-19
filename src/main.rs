@@ -2,7 +2,7 @@
 extern crate clap;
 use clap::{Arg, App};
 extern crate loggerv;
-
+extern crate rawloader;
 
 fn main() {
     let args = App::new("raw image development")
@@ -26,5 +26,8 @@ fn main() {
 
     let input = args.value_of("input").unwrap();
     debug!("input file: {}", input);
+
+    let image = rawloader::decode_file(input).unwrap();
+    debug!("size: ({}, {})", image.width, image.height);
 }
 

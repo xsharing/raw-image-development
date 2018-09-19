@@ -8,4 +8,5 @@ authors = [ "Nobuyuki Horiuchi <horiuchinobuyuki@gmail.com>" ]
 clap = "2.32"
 loggerv = "0.7.1"
 log = "0.4.5"
+rawloader = "0.35.3"
 
